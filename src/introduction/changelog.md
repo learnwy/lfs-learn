@@ -1,0 +1,154 @@
+# What's new since the last release
+
+This is version 10.1 of the Linux From Scratch book, dated March 1st, 2021. If this book is more than six months old, a newer and better version is probably already available. To find out, please check one of the mirrors via [http://www. linuxfromscratch.org/mirrors.html]().
+
+Below is a list of changes made since the previous release of the book.
+
+## Changelog Entries:
+
+- 2021-03-01
+    - [bdubbs] - LFS-10.1 released.
+- 2021-02-20
+    - [bdubbs] - Update to meson-0.57.1. Fixes #4821.
+    - [bdubbs] - Update to Python-3.9.2. Fixes #4820.
+    - [pierre] - Fix grub to prevent generation of a huge binary blob for lzma compression. Reported on the lfs- support mailing list by Frans de Boer.
+- 2021-02-18
+    - [bdubbs] - Fix a glibc bug that causes issues with chrooted applications. Fixes #4817.
+    - [bdubbs] - Update to bc-3.3.0. Fixes #4819.
+    - [bdubbs] - Update to openssl-1.1.1j. Fixes #4816.
+    - [bdubbs] - Update to meson-0.57.0. Fixes #4815.
+    - [bdubbs] - Update to linux-5.10.17. Fixes #4807.
+- 2021-02-14
+    - [renodr] - Add a command explanation for 'pwait'.
+    - [bdubbs] - Update to util-linux-2.36.2. Fixes #4812.
+    - [bdubbs] - Update to tar-1.34. Fixes #4813.
+    - [bdubbs] - Update to psmisc-23.4. Fixes #4805.
+    - [bdubbs] - Update to procps-ng-3.3.17. Fixes #4811.
+    - [bdubbs] - Update to man-db-2.9.4. Fixes #4808.
+    - [bdubbs] - Update to eudev-3.2.10. Fixes #4810.
+    - [bdubbs] - Update to elfutils-0.183. Fixes #4806.
+    - [bdubbs] - Update to e2fsprogs-1.46.1. Fixes #4809.
+    - [bdubbs] - Update to bc-3.2.7. Fixes #4814.
+- 2021-02-01
+    - [bdubbs] - Update to iana-etc-20210202. Addresses #4722.
+    - [bdubbs] - Update to inetutils-2.0. Fixes #4803.
+    - [bdubbs] - Update to libcap-2.48. Fixes #4802.
+    - [bdubbs] - Update to binutils-2.36.1. Fixes #4804.
+    - [bdubbs] - Update to linux-5.10.13. Fixes #4801.
+- 2021-02-02
+    - [pierre] - Move tcl, expect, and dejagnu just before binutils in chapter 8: this allows to build them against
+    chapter 8 glibc.
+    - [pierre] - To allow building with newer version of glibc than the host distribution, build a "file" executable for
+    the host before cross-compiling it.
+    - [pierre] - Replace the relinked libctf (which may incorrectly link against libz from the host distribution) with the
+    one that was linked during "make" in binutils-pass2. Thanks to Xi Ruoyao for the fix.
+    - [bdubbs] - Update to bc-3.2.6. Fixes #4800.
+    - [bdubbs] - Update to glibc-2.33. Fixes #4799.
+    - [bdubbs] - Minor change to mountfs boot script. Fixes #4798.
+- 2021-02-01
+    - [bdubbs] - Update to vim-8.2.2433. Addresses #4500.
+    - [bdubbs] - Update to iana-etc-20210115. Addresses #4722.
+    - [bdubbs] - Update to bc-3.2.5. Fixes #4797.
+    - [bdubbs] - Update to e2fsprogs-1.46.0. Fixes #4796.
+    - [bdubbs] - Update to autoconf-2.71. Fixes #4795.
+    - [bdubbs] - Update to tzdata-2021a. Fixes #4793.
+    - [bdubbs] - Update to perl-5.32.1. Fixes #4792.
+    - [bdubbs] - Update to libcap-2.47. Fixes #4791.
+    - [bdubbs] - Update to bison-3.7.5. Fixes #4790.
+    - [bdubbs] - Update to binutils-2.36. Fixes #4789.
+    - [bdubbs] - Update to linux-5.10.12. Fixes #4786.
+- 2020-01-16
+    - [renodr] - Update to findutils-4.8.0. Fixes #4785.
+    - [renodr] - Update to kmod-28. Fixes #4784.
+    - [renodr] - Update to tar-1.33. Fixes #4783.
+    - [renodr] - Update to linux-5.10.7. Fixes #4782.
+    - [renodr] - Update to meson-0.56.2. Fixes #4781.
+    - [renodr] - Update to tcl-8.6.11. Fixes #4780.
+- 2021-01-13
+    - [xry111] - Fix util-linux uuidd socket path.
+    - [xry111] - Remove various references to deprecated /var/run, use /run instead.
+    - [xry111] - Update to lfs-bootscripts-20210113.
+- 2021-01-01
+    - [bdubbs] - Update to vim-8.2.2253. Addresses #4500.
+    - [bdubbs] - Update to iana-etc-20201229. Addresses #4722.
+    - [bdubbs] - Update to gdbm-1.19. Fixes #4779.
+    - [bdubbs] - Update to tzdata-2020f. Fixes #4777.
+    - [bdubbs] - Update to man-pages-5.10. Fixes #4776.
+    - [bdubbs] - Update to iproute2-5.10.0. Fixes #4775.
+    - [bdubbs] - Update to zstd-1.4.8. Fixes #4774.
+    - [bdubbs] - Update to kbd-2.4.0. Fixes #4773.
+    - [bdubbs] - Update to linux-5.10.4. Fixes #4772.
+- 2020-12-15
+    - [bdubbs] - Update to libcap-2.46. Fixes #4771.
+    - [bdubbs] - Update to bc-3.2.4. Fixes #4770.
+    - [bdubbs] - Update to autoconf-2.70. Fixes #4769.
+    - [bdubbs] - Update to openssl-1.1.1i. Fixes #4768.
+    - [bdubbs] - Update to Python3-3.9.1. Fixes #4767.
+    - [bdubbs] - Update to linux-5.9.14. Fixes #4766.
+    - [bdubbs] - Update to bash-5.1 and readline-8.1. Fixes #4764.
+- 2020-12-07
+    - [ken] - Patch meson-0.56.0 to correctly create pkgconfig files re static libraries (re sysprof in BLFS) . Fixes #4675.
+- 2020-12-03
+    - [renodr] - Update to linux-5.9.12. Fixes #4673.
+    - [renodr] - Update to bc-3.2.3. Fixes #4672.
+- 2020-12-01
+    - [bdubbs] - Update to ninja-1.10.2. Fixes #4760.
+    - [bdubbs] - Update to bc-3.2.1. Fixes #4759.
+    - [bdubbs] - Update to linux-5.9.11. Fixes #4758.
+    - [bdubbs] - Update to automake-1.16.3. Fixes #4757.
+    - [bdubbs] - Update to sysvinit-2.98. Fixes #4756.
+    - [bdubbs] - Update to util-linux-2.36.1. Fixes #4755.
+    - [bdubbs] - Update to iana-etc-20201124. Addresses #4722.
+    - [bdubbs] - Update to vim-8.2.2070. Addresses #4500.
+- 2020-11-15
+    - [bdubbs] - Update to gmp-6.2.1. Fixes #4754.
+    - [bdubbs] - Update to iana-etc-20201110. Addresses #4722.
+    - [bdubbs] - Update to man-pages-5.09. Fixes #4750.
+    - [bdubbs] - Update to linux-5.9.8. Fixes #4749.
+    - [bdubbs] - Update to libcap-2.45. Fixes #4751.
+    - [bdubbs] - Update to grep-3.6. Fixes #4752.
+    - [bdubbs] - Update to bison-3.7.4. Fixes #4753.
+- 2020-11-01
+    - [bdubbs] - Update to elfutils-0.182. Fixes #4748.
+    - [bdubbs] - Update to meson-0.56.0. Fixes #4747.
+    - [bdubbs] - Update to linux-5.9.2. Fixes #4746.
+    - [bdubbs] - Update to mpc-1.2.1. Fixes #4744.
+    - [bdubbs] - Update to less-563. Fixes #4743.
+    - [bdubbs] - Update to tzdata-2020d. Fixes #4742.
+- 2020-10-19
+    - [dj] - Update to lfs-bootscripts-20201019.
+- 2020-10-20
+    - [bdubbs] - Update to iproute2-5.9.0. Fixes #4739.
+    - [bdubbs] - Update to tzdata-2020c. Fixes #4741.
+    - [bdubbs] - Update to linux-5.9.1. Fixes #4740.
+- 2020-10-15
+    - [bdubbs] - Update to iana-etc-20201012. Addresses #4722.
+    - [bdubbs] - Update to vim-8.2.1845. Addresses #4500.
+    - [bdubbs] - Update to bison-3.7.3. Fixes #4738.
+    - [bdubbs] - Update to tzdata-2020b. Fixes #4737.
+    - [bdubbs] - Update to libcap-2.44. Fixes #4735.
+    - [bdubbs] - Update to Python-3.9. Fixes #4736.
+    - [bdubbs] - Update to expat-2.2.10. Fixes #4734.
+    - [bdubbs] - Update to bc-3.1.6. Fixes #4732.
+    - [bdubbs] - Update to linux-5.9. Fixes #4733.
+- 2020-10-01
+    - [bdubbs] - Update to grep-3.5. Fixes #4731.
+    - [bdubbs] - Update to Python-3.8.6. Fixes #4730.
+    - [bdubbs] - Update to openssl-1.1.1h. Fixes #4729.
+    - [bdubbs] - Update to binutils-2.35.1. Fixes #4728.
+    - [bdubbs] - Update to linux-5.8.12. Fixes #4727.
+- 2020-09-27
+    autoconf-2.69-consolidated_fixes-1.patch which allows autoconf tests to pass.
+- 2020-09-15
+    - [bdubbs] - Update to linux-5.8.9. Fixes #4723.
+    - [bdubbs] - Update to bison-3.7.2. Fixes #4724.
+    - [bdubbs] - Update to elfutils-0.181. Fixes #4725.
+    - [bdubbs] - Update to meson-0.55.3. Fixes #4726.
+- 2020-09-02
+    - [bdubbs] - Update to linux-5.8.5. Fixes #4721.
+    - [bdubbs] - Update to ninja-1.10.1. Fixes #4719.
+    - [bdubbs] - Update to mpc-1.2.0. Fixes #4717.
+    - [bdubbs] - Update to meson-0.55.1. Fixes #4716.
+    - [bdubbs] - Update to libcap-2.43. Fixes #4715.
+- 2020-09-01
+    - [bdubbs] - LFS-10.0 released.
